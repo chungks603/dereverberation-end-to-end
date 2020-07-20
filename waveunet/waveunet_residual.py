@@ -1,7 +1,6 @@
 import torch.nn as nn
 from hparams import hp
-from waveunet.waveunet_utils import \
-    DownBlock, UpBlock, BottleneckFC
+from waveunet.waveunet_utils import DownBlock, UpBlock, BottleneckFC
 
 
 class WaveUNet(nn.Module):
