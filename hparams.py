@@ -13,9 +13,9 @@ class HParams(object):
     """
     # Dataset Settings
     feature: str = 'IV'
-    path_feature: Path = Path('/mnt/sdb1/chungks/dereverberation/data')
-    room_train: str = 'fitting'
-    room_test: str = 'fitting'
+    path_feature: Path = Path('/data')
+    room_train: str = 'room1'
+    room_test: str = 'room1'
 
     # Feature Parameters
     sample_rate: int = 16000
@@ -63,9 +63,9 @@ class HParams(object):
 
         # path
         form = f'{self.feature}_{{}}'
-        p_f_train = self.path_feature / f'{form.format(self.room_train)}/TRAIN_8_1200'
-        p_f_valid = self.path_feature / f'{form.format(self.room_train)}/VALID_8'
-        p_f_test = self.path_feature / f'{form.format(self.room_test)}/TEST_8'
+        p_f_train = self.path_feature / f'{form.format(self.room_train)}/TRAIN'
+        p_f_valid = self.path_feature / f'{form.format(self.room_train)}/VALID'
+        p_f_test = self.path_feature / f'{form.format(self.room_test)}/TEST'
         self.dict_path = dict(
             feature_train=p_f_train,
             feature_valid=p_f_valid,
