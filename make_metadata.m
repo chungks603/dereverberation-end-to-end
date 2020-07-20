@@ -2,7 +2,7 @@
 clear
 clc
 
-addpath data
+addpath data    % path of data
 % load('IReqHOA_[7 9 3].mat')
 
 feat = 'IV';            % feature type
@@ -50,7 +50,7 @@ save(['data/' feat '_fitting/VALID_' num2str(Npos) '/metadata.mat'],...
 clear
 clc
 
-addpath data
+addpath data    % path of data
 
 feat = 'IV';
 Ndata = 1680;
