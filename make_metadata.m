@@ -78,13 +78,13 @@ end
 rooms = 'room1';
 n_loc = 8;
 
-path_feat = dir(['data/' feat '_fitting/TEST_8/*.npz']);
+path_feat = dir(['data/' feat '_fitting/TEST/*.npz']);
 list_fname = [];
 for ii = 1:Nfeat
     list_fname = [list_fname; path_feat(ii).name];
 end
 
-save(['data/' feat '_fitting/TEST_8/metadata.mat'],...
+save(['data/' feat '_fitting/TEST/metadata.mat'],...
     'n_loc', 'rooms', 'path_all_speech', 'list_fname', '-v6');
 
 save('metadata.mat', 'fs', 'l_frame','l_hop','list_fname','n_fft',...
