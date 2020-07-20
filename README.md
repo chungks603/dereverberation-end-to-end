@@ -10,7 +10,7 @@ Because the code for the feature extraction is considered my lab's assets, it wo
 
 The procedure can be explained in brief:
 
-1. Transform the room impulse responses (RIRs) into the **spherical harmonic domain (SHD) signals** with real spherical Fourier transform basis.
+1. Transform the 32-channel room impulse responses (RIRs) into the **spherical harmonic domain (SHD) signals** with real spherical Fourier transform basis.
 2. Calculate **reverberant SHD signals** from speech sources, the modified inverse of the rigid sphere modal strength $b^{-1}_n(kr)$, and the result of 1.
 3. Calculate directional feature, instantaneous intensity vector (**IIV** in thesis, **IV** in python code).
 
