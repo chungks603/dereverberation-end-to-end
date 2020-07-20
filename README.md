@@ -1,4 +1,4 @@
-# End-to-end speech dereverberation using acoustic intensity based on deep neural networks
+# End-to-end multichannel speech dereverberation using acoustic intensity based on deep neural networks
 
 This is an implementation of my [master thesis](https://chungks603.github.io/assets/master-thesis.pdf).
 
