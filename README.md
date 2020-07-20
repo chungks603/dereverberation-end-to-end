@@ -18,7 +18,7 @@ The procedure can be explained in brief:
 
 ## Model
 
-The model is based on the Wave-U-Net, https://github.com/f90/Wave-U-Net-Pytorch.
+The model is a modified version of the Wave-U-Net, https://github.com/f90/Wave-U-Net-Pytorch.
 
 Refer to the `waveunet` directory.
 
